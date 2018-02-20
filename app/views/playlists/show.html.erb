@@ -2,12 +2,12 @@
 
 <div class="card bg-light large-padding text-center" style="width: 30rem;">
 	<p>
-		<strong>Name:</strong>
+		<strong>Nombre:</strong>
 		<%= @playlist.name %>
 	</p>
 	
 	<p>
-		<strong>User:</strong>
+		<strong>Usuario:</strong>
 		<%= @playlist.user.name %>
 	</p>
 	
@@ -56,5 +56,5 @@
 
 
 
-<%= link_to 'Edit', edit_playlist_path(@playlist) %> |
-<%= link_to 'Back', playlists_path %>
+<%= link_to 'Editar', edit_playlist_path(@playlist), class:'btn btn-warning' %> |
+<%= link_to 'Volver', playlists_path, class:'btn btn-info' %>
